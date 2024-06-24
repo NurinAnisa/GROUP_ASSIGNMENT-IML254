@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .cart-header {
+            background-color: #729762;
+            padding: 20px;
+            color: white;
+            width: 100%;
+        }
+        .cart-header h1 {
+            margin: 0;
+        }
+        .cart-content {
+            padding: 20px;
+            flex: 2;
+        }
+        .cart-content h2 {
+            margin-top: 0;
+        }
+        .cart-items {
+            list-style: none;
+            padding: 0;
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #e6e6e6;
+            padding-bottom: 20px;
+        }
+        .cart-item img {
+            max-width: 80px;
+            border-radius: 4px;
+        }
+        .cart-item-details {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .cart-item-details h3 {
+            margin: 0;
+        }
+        .cart-item-details p {
+            margin: 5px 0;
+            color: #666;
+        }
+        .cart-item-price {
+            font-weight: bold;
+            margin-left: 20px;
+        }
+        .cart-summary {
+            padding: 20px;
+            background-color: #fafafa;
+            flex: 1;
+        }
+        .cart-summary h2 {
+            margin-top: 0;
+        }
+        .cart-summary .address,
+        .cart-summary .payment-method,
+        .cart-summary .discount-code,
+        .cart-summary .totals {
+            margin-bottom: 20px;
+        }
+        .cart-summary .edit {
+            float: right;
+            color: #ff6f91;
+            text-decoration: none;
+        }
+        .cart-summary .discount-code input {
+            width: calc(100% - 80px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .cart-summary .discount-code button {
+            padding: 10px;
+            border: none;
+            background-color: #333;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .cart-summary .totals {
+            font-weight: bold;
+        }
+        .checkout-btn {
+            background-color:#E7D4B5;
+            color: Black;
+            padding: 15px;
+            border: none;
+            width: 100%;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 4px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cart-header">
+           <h1 style="color:black;font-family:Monaco;">Shopping Cart</h1>
+        </div>
+        <div class="cart-content">
+            <h2 style="color:black;font-family:Courier New;">3 Item</h2>
+            <ul class="cart-items">
+                <li class="cart-item">
+                    <img src="baju 1.jpg" alt="Flower Blouse">
+                    <div class="cart-item-details">
+                        <h3>Flower Blouse</h3>
+                        <p>Color: dark blue, size- Free size</p>
+                        <p>Qty: 1</p>
+                    </div>
+                    <div class="cart-item-price">RM 5</div>
+                </li>
+                <li class="cart-item">
+                    <img src="baju 2.jpg" alt="Checkered">
+                    <div class="cart-item-details">
+                        <h3>Checkered</h3>
+                        <p>Color: Black, size S</p>
+                        <p>Qty: 1</p>
+
+</div>
+                    <div class="cart-item-price">RM 5</div>
+                </li>
+                <li class="cart-item">
+                    <img src="baju 3.jpg" alt="Satin Blouse">
+                    <div class="cart-item-details">
+                        <h3>Satin Blouse</h3>
+                        <p>Color: thunder gray, size S</p>
+                        <p>Qty: 1</p>
+                    </div>
+                    <div class="cart-item-price">RM 5</div>
+                </li>
+            </ul>
+        </div>
+        <div class="cart-summary">
+            <h2 style="color:black;font-family:Monaco;">Summary</h2>
+            <div class="address">
+                <strong>Dennia Chu</strong><br>
+                KUALA BERANG<br>
+                21700,TERENGGANU<br>
+                Malaysia<br>
+                <h5>Edit</h5>
+            </div>
+            <div class="payment-method">
+                <strong>Payment method</strong><br>
+                Credit Card<br>
+                **** **** **** 5057<br>
+                <h5>Edit</h5>
+            </div>
+            <div class="discount-code">
+                <label for="discount-code">Do you have any discount code?</label><br>
+                <input type="text" id="discount-code" placeholder="Your code here">
+                <button>Apply</button>
+            </div>
+            <div class="totals">
+                Subtotal (3 items): RM 15.00<br>
+                Shipping costs: RM 8.00<br>
+                Discount: -<br>
+                <hr>
+                Total (incl. VAT): RM 23.00
+            </div>
+            <button class="checkout-btn">CHECKOUT</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Sellers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #A0937D;
+            margin: 0;
+            padding: 0;
+        }
+
+        .best-sellers {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #B6C7AA;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .best-sellers h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .products {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            width: 23%;
+            margin: 10px 0;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .reviews {
+            font-size: 0.9em;
+            color: #ff9900;
+        }
+
+        .price {
+            font-size: 1.2em;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .quantity {
+            margin: 10px 0;
+        }
+
+        .quantity input {
+            width: 40px;
+            padding: 5px;
+            margin-left: 10px;
+        }
+
+        .add-to-cart {
+            background-color: #FFB1B1;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .add-to-cart:hover {
+            background-color: #C80036;
+        }
+
+        .product select {
+            margin: 10px 0;
+            padding: 5px;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <center><img src="collection.jpg"style="width:800px;200px;"></center>
+
+    <section class="best-sellers">
+        <h2 style="background-color:#EBF4F6;font-family:Georgia;text-align:center;">"Best Seller"</h2>
+        <div class="products">
+            <div class="product">
+                <img src="baju 1.jpg" alt="Flower Blouse">
+                <h3>Flower Blouse</h3>
+                <div class="reviews">★★★★★ 112 Reviews</div>
+                <select>
+                    <option>Free Size</option>
+                </select>
+                <div class="price"> RM 5.00</div>
+                <div class="quantity">
+                    <label for="quantity1">Qty:</label>
+                    <input type="number" id="quantity1" name="quantity1" min="1" max="10" value="1">
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="seluar 1.jpg" alt="Jeans">
+                <h3>Jean</h3>
+                <div class="reviews">★★★★★ 158 Reviews</div>
+                <select>
+                    <option>36</option>
+                </select>
+                <div class="price">RM 15</div>
+                <div class="quantity">
+                    <label for="quantity2">Qty:</label>
+                    <input type="number" id="quantity2" name="quantity2" min="1" max="10" value="1">
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="baju 2.jpg" alt=" Black Checkered">
+                <h3> Black Checkered</h3>
+                <div class="reviews">★★★★★ 87 Reviews</div>
+                <select>
+                    <option> S </option>
+                </select>
+                <div class="price">RM 10.00</div>      
+                <div class="quantity">
+                    <label for="quantity2">Qty:</label>
+                    <input type="number" id="quantity2" name="quantity2" min="1" max="10" value="1">
+                </div>
+
+
+
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

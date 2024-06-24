@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:#A0937D ;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color:#B6C7AA ;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        .header .controls {
+            display: flex;
+            align-items: center;
+        }
+
+        .header .controls button {
+            background-color: #ff3366;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin-right: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .header .controls select {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            width: 23%;
+            margin: 10px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .price {
+            font-size: 1.2em;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: #999;
+            margin-right: 5px;
+        }
+
+        .sale {
+            background-color: #ff3366;
+            color: #fff;
+            padding: 2px 6px;
+            font-size: 0.8em;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        .add-to-cart {
+            background-color: #FFB1B1;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+.add-to-cart:hover {
+            background-color: #C80036;
+        }
+    </style>
+</head>
+<body>
+<center><img src="product.jpg"style="width:500px;200px;"></center>
+
+
+    <div class="container">
+        <div class="header">
+            <h1 style="background-color:#EBF4F6;font-family:Georgia;">Product</h1>
+            <h3 style="font-family:Lucida Console;">Clothing is skincare too.</h3>
+            <div class="controls">      
+            </div>
+        </div>
+        <div class="products">
+            <div class="product">
+                <img src="seluar 1.jpg" alt="Jeans">
+                <h3>Jeans</h3>
+                <div class="price">RM 15.00</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="seluar 2.jpg" alt="Track-suit">
+                <h3>Track-suit</h3>
+                <div class="price">RM5.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="seluar 3.jpg" alt="Slack">
+                <h3>Slack</h3>
+                <div class="price">RM 5.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <div class="sale">Sale</div>
+                <img src="seluar 4.jpg" alt="Night Pants">
+                <h3>Night Pants</h3>
+                <div class="price">
+                    <span class="old-price">RM 5.00</span>
+                    RM3.00
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="seluar 5.jpg" alt="Night Pants">
+                <h3>Night Pants</h3>
+                <div class="price">RM 3.00</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <div class="sale">Sale</div>
+                <img src="seluar 6.jpg" alt="Flower Night Pants">
+                <h3>Flower Night Pants</h3>
+                <div class="price">
+                    <span class="old-price">RM 3.99</span>
+                    RM 5.00
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+                 </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

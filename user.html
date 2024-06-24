@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #A0937D;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+          }
+
+        
+        }
+
+
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 30px;
+            position: relative;
+        }
+
+        .signup-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .signup-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .input-group .error-message {
+            color: red;
+            font-size: 12px;
+            position: absolute;
+            bottom: -18px;
+            left: 0;
+            display: none;
+        }
+
+        .input-group input:invalid ~ .error-message {
+            display: block;
+        }
+
+        .show-password {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            cursor: pointer;
+            background-image: url('eye-icon.png'); /* Add your eye icon image path */
+            background-size: cover;
+            width: 20px;
+            height: 20px;
+        }
+
+        .signup-btn {
+            background-color: #ff5a5f;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .or {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .social-login {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .social-login button {
+            width: 48%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .facebook-btn {
+            background-color: #3b5998;
+            color: white;
+        }
+
+        .google-btn {
+            background-color: #db4437;
+            color: white;
+        }
+
+        .login-link {
+            text-align: center;
+        }
+
+        .login-link a {
+            color: #ff5a5f;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form class="signup-form">
+            <h1 style="color:black;font-family:Monaco;text-align:center;">Sign Up</h1>
+            <div class="input-group">
+                <input type="email" id="email" placeholder="Email" value="Email" required>
+                <p class="error-message">Please enter a valid email address.</p>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="button" class="show-password"></button>
+            </div>
+            <button type="submit" class="signup-btn">Sign Up</button>
+            <p class="or">or Sign Up with</p>
+            <div class="social-login">
+                <button type="button" class="facebook-btn">Facebook</button>
+                <button type="button" class="google-btn">Google</button>
+            </div>
+            <p class="login-link">Already a user? <a href="#">Log In</a></p>
+        </form>
+    </div>
+</body>
+</html>
